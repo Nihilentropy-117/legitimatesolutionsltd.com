@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Legitimate Solutions, Ltd.</title>
+<meta name="description" content="Contact Legitimate Solutions, Ltd. — Greater Cincinnati, Ohio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f6f1e6;
+    --paper-deep: #ede5d3;
+    --ink: #1f1d1a;
+    --ink-soft: #4a463f;
+    --rule: #b9ad94;
+    --accent: #5a1f1f;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: 18px;
+    line-height: 1.65;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  main { flex: 1; }
+  a { color: inherit; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+  header { border-bottom: 1px solid var(--rule); }
+  header .wrap { display: flex; justify-content: space-between; align-items: center; padding-top: 22px; padding-bottom: 22px; gap: 16px; }
+  .wordmark { font-family: "Cormorant Garamond", serif; font-variant: small-caps; letter-spacing: 0.18em; font-size: 17px; text-decoration: none; font-weight: 600; }
+  nav a { font-variant: small-caps; letter-spacing: 0.16em; font-size: 15px; text-decoration: none; margin-left: 28px; color: var(--ink-soft); }
+  nav a:hover, nav a[aria-current] { color: var(--ink); border-bottom: 1px solid var(--ink); }
+
+  .intro { text-align: center; padding: 80px 0 20px; }
+  h1 { font-family: "Cormorant Garamond", serif; font-weight: 500; font-variant: small-caps; letter-spacing: 0.24em; font-size: clamp(30px, 6vw, 48px); line-height: 1.15; }
+  .ornament { display: flex; align-items: center; justify-content: center; gap: 16px; margin: 30px auto; max-width: 300px; color: var(--rule); }
+  .ornament::before, .ornament::after { content: ""; flex: 1; height: 1px; background: var(--rule); }
+  .ornament span { font-size: 11px; }
+  .lede { max-width: 560px; margin: 0 auto; color: var(--ink-soft); }
+
+  .card {
+    max-width: 560px;
+    margin: 48px auto 96px;
+    border: 1px solid var(--rule);
+    background: var(--paper-deep);
+    padding: 44px 40px;
+    outline: 1px solid var(--rule);
+    outline-offset: -8px;
+  }
+  .row { display: grid; grid-template-columns: 170px 1fr; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  .row:last-child { border-bottom: none; }
+  .label { font-variant: small-caps; letter-spacing: 0.18em; font-size: 15px; color: var(--ink-soft); padding-top: 2px; }
+  .value a { text-decoration: none; border-bottom: 1px solid var(--rule); }
+  .value a:hover { border-bottom-color: var(--ink); }
+
+  footer { border-top: 1px solid var(--rule); padding: 36px 0 44px; text-align: center; font-size: 14px; color: var(--ink-soft); }
+  footer p + p { margin-top: 6px; }
+  .smallcaps { font-variant: small-caps; letter-spacing: 0.16em; }
+
+  @media (max-width: 720px) {
+    body { font-size: 17px; }
+    header .wrap { flex-direction: column; }
+    nav a { margin: 0 12px; }
+    .intro { padding: 56px 0 12px; }
+    .card { padding: 32px 24px; margin: 36px auto 64px; }
+    .row { grid-template-columns: 1fr; gap: 2px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="wordmark" href="index.html">Legitimate Solutions, Ltd.</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="intro">
+    <div class="wrap">
+      <h1>Correspondence</h1>
+      <div class="ornament"><span>◆</span></div>
+      <p class="lede">Inquiries are received during regular business hours and answered with appropriate promptness and discretion. Consultations are arranged by appointment.</p>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="card">
+      <div class="row">
+        <div class="label">Principal</div>
+        <div class="value">Gray Lott</div>
+      </div>
+      <div class="row">
+        <div class="label">Telephone</div>
+        <!-- REPLACE: phone number (both the tel: link and the displayed text) -->
+        <div class="value"><a href="tel:+15130000000">(513) 000-0000</a></div>
+      </div>
+      <div class="row">
+        <div class="label">Electronic Mail</div>
+        <!-- REPLACE: email address if different -->
+        <div class="value"><a href="mailto:contact@legitimatesolutionsltd.com">contact@legitimatesolutionsltd.com</a></div>
+      </div>
+      <div class="row">
+        <div class="label">Jurisdiction</div>
+        <div class="value">Greater Cincinnati, Ohio</div>
+      </div>
+      <div class="row">
+        <div class="label">Hours of Business</div>
+        <div class="value">By appointment</div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="smallcaps">Legitimate Solutions, Ltd.</p>
+    <p>An Ohio Limited Liability Company &nbsp;·&nbsp; Greater Cincinnati</p>
+    <p>© 2026 Legitimate Solutions, Ltd. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
